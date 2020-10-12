@@ -2,7 +2,7 @@
 Couturier is serving platform for machinlearning models.
 
 ## Project overview
-Couturier provides a simple method to deploy one or more machinelearning models to a production environment and expose it through a REST api. 
+Couturier provides a simple method to expose machinelearning models through a REST api. It currently features prediction and evaluation endpoints.  
 
 ## Quickstart
 

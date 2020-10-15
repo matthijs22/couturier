@@ -22,9 +22,9 @@ class Predict(Resource):
         try:
             return tm.predict(data), 200
         except ValueError:
-            return "ValueError: Inputshape incorrect"
+            return "ValueError: Inputshape incorrect", 500
         else:
-            return "An error occurred"
+            return "An error occurred", 500
 
 api.add_resource(Model, '/model')
 api.add_resource(Predict, '/predict')

@@ -5,8 +5,10 @@ Couturier is serving platform for machinelearning models.
 Couturier provides a simple method to expose multiple machinelearning models through a REST api. It currently only provides a prediction endpoint.  
 
 ## Quickstart
-* `git clone https://github.com/matthijs22/couturier.git`
-* `pip install -r requirements.txt`
+```
+git clone https://github.com/matthijs22/couturier.git
+pip install -r requirements.txt
+```
 * rename or copy models/example.py
 * change the model class in each of the model files should match the filename
 * implement the methods in example.py
@@ -15,5 +17,7 @@ Couturier provides a simple method to expose multiple machinelearning models thr
     * ./models/pickles/<modelname>.scaler.sav
 
 ## Docker integration
-`docker build . --tag mymodel-couturier`
-`docker run -p 8080:8080 mymodel-couturier`
+```
+docker build . --tag mymodel-couturier
+docker run -p 8080:8080 mymodel-couturier
+```

@@ -2,7 +2,7 @@
 Couturier is serving platform for machinelearning models.
 
 ## Project overview
-Couturier provides a simple method to expose multiple machinelearning models through a REST api. It currently only provides a prediction endpoints.  
+Couturier provides a simple method to expose multiple machinelearning models through a REST api. It currently only provides a prediction endpoint.  
 
 ## Quickstart
 * `git clone https://github.com/matthijs22/couturier.git`

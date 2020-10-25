@@ -1,0 +1,10 @@
+workspace.code-workspace
+Pipfile
+Pipfile.lock
+.env
+pyvenv.cfg
+share
+include
+bin
+lib
+lib64

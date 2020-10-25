@@ -1,11 +1,11 @@
-FROM python:3.8-buster
+FROM python:3.8-buster-slim
 WORKDIR /home/app
-COPY server.py .
+COPY app.py .
+COPY model_manager.py .
 COPY requirements.txt .
-COPY ./model/model.py ./model/
-COPY ./model/model.sav ./model/
+COPY models .
 RUN pip install install-requires
 RUN pip install -r requirements.txt
 EXPOSE 8080
 ENTRYPOINT ["python"]
-CMD ["server.py"]
+CMD ["app.py"]
